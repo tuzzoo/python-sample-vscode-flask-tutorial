@@ -10,7 +10,8 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '9600f995-3243-46c1-8c2d-993104052447'
+  #dockerRegistryServiceConnection: '9600f995-3243-46c1-8c2d-993104052447'
+  dockerRegistryServiceConnection: 'cgnn23registry-1742'
   imageRepository: 'tuzzoopythonsamplevscodeflasktutorial'
   containerRegistry: 'cgnn23registry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
