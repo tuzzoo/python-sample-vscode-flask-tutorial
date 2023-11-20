@@ -14,7 +14,7 @@ variables:
   imageRepository: 'tuzzoopythonsamplevscodeflasktutorial'
   containerRegistry: 'cgnn23registry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
-  tag: '111'
+  tag: 'latest'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
