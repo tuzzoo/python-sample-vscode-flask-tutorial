@@ -2,8 +2,7 @@
 # Build and push an image to Azure Container Registry
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
-trigger:
-- main
+trigger: none
 
 resources:
 - repo: self
@@ -11,7 +10,7 @@ resources:
 variables:
   # Container registry service connection established during pipeline creation
   #dockerRegistryServiceConnection: '9600f995-3243-46c1-8c2d-993104052447'
-  dockerRegistryServiceConnection: 'cgnn23registry-1742'
+  dockerRegistryServiceConnection: 'cgnn23registry-managed'
   imageRepository: 'tuzzoopythonsamplevscodeflasktutorial'
   containerRegistry: 'cgnn23registry.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
